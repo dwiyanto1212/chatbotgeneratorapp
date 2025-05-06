@@ -1,0 +1,23 @@
+// public/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM Chatbot Generator</title>
+</head>
+<body>
+  <h1>Deep Learning Lesson Plan Generator</h1>
+  <form id="designForm">
+    <label>Phase: <input name="phase" required /></label><br>
+    <label>Subject: <input name="subject" required /></label><br>
+    <label>Topic: <input name="topic" required /></label><br>
+    <label>Profiles (comma): <input name="profile" required /></label><br>
+    <label>Objectives (comma): <input name="objectives" required /></label><br>
+    <label>Indicators (comma): <input name="indicators" required /></label><br>
+    <button type="submit">Generate</button>
+  </form>
+  <pre id="output"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
