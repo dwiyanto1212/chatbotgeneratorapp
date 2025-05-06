@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PM Chatbot Generator</title>
+  <meta charset="UTF-8" />
+  <title>Deep Learning Lesson Plan Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Deep Learning Lesson Plan Generator</h1>
-  <form id="designForm">
-    <label>Phase: <input name="phase" required /></label><br>
-    <label>Subject: <input name="subject" required /></label><br>
-    <label>Topic: <input name="topic" required /></label><br>
-    <label>Profiles (comma): <input name="profile" required /></label><br>
-    <label>Objectives (comma): <input name="objectives" required /></label><br>
-    <label>Indicators (comma): <input name="indicators" required /></label><br>
-    <button type="submit">Generate</button>
-  </form>
-  <pre id="output"></pre>
+  <div class="container">
+    <h1>Deep Learning Lesson Plan Generator</h1>
+    <form id="lesson-form">
+      <div class="form-group">
+        <label for="phase">Phase</label>
+        <input type="text" id="phase" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" required />
+      </div>
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <input type="text" id="topic" required />
+      </div>
+      <div class="form-group">
+        <label for="profiles">Profiles (comma)</label>
+        <input type="text" id="profiles" />
+      </div>
+      <div class="form-group">
+        <label for="objectives">Objectives (comma)</label>
+        <input type="text" id="objectives" />
+      </div>
+      <div class="form-group">
+        <label for="indicators">Indicators (comma)</label>
+        <input type="text" id="indicators" />
+      </div>
+      <button type="submit">Generate</button>
+    </form>
+    <pre id="result"></pre>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
