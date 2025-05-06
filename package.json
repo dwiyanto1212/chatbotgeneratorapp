@@ -1,4 +1,3 @@
-// package.json
 {
   "name": "pm-chatbot-generator-app",
   "version": "1.0.0",
@@ -7,8 +6,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "dotenv": "^16.5.0",
     "openai": "^4.97.0"
   }
 }
